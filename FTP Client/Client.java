@@ -34,8 +34,7 @@ public class Client{
 				System.out.println("Please Make a Choice : \n1. send file \n2. receive file \n3. delete file \nYour Choice: ");
 				inputFromUser = br.readLine();
 				int i = Integer.parseInt(inputFromUser);
-				switch(i)
-				{
+				switch(i){
 					case 1: sendFile(); break;
 					case 2: receiveFile(); break;
 					case 3: deleteFile(); break;
@@ -136,8 +135,6 @@ public class Client{
 				System.out.println("There are no files on server.");
 				System.out.println("____________________________________________________________________\n");		
 			}
-
-			
 		}
 		catch(Exception e){
 			System.out.println("ERROR: Connection error occured.");
